@@ -6,7 +6,7 @@
 .bull-stream {
   position: absolute;
   opacity: 0;
-  top: 6.15rem;
+  top: 6rem;
   left: 2.75rem;
   height: 2.5rem;
   width: 2.5rem;
@@ -19,11 +19,9 @@
 
 .main-title {
   font-family: "Suez One", serif;
-  color: white;
 }
 .main-subtitle {
   font-family: "Raleway", sans-serif;
-  color: white;
 }
 
 .circle-text {
@@ -31,4 +29,14 @@
   top: 10rem;
   left: auto;
   right: 10rem;
+}
+
+.outlined {
+  text-shadow: white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
+    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
+    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
+    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
+    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
+    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
+    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px;
 }

@@ -21,8 +21,8 @@ module.exports = {
       },
       orange: {
         light: "#FFFCE4",
-        DEFAULT: "#EA822F",
-        dark: "#D28130",
+        DEFAULT: "#F28B37",
+        dark: "#DA7437",
         darker: "#A55A2F",
       },
       red: {
