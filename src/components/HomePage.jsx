@@ -11,9 +11,7 @@ const HomePage = () => {
         style={{ backgroundImage: `url(${horns})` }}
       >
         <div className="rounded-full hidden border-2 border-red-dark text-center h-32 w-32 circle-text xl:flex flex-col justify-center items-center">
-          <p className="text-orange-light text-lg font-bold">
-            Front-End Developer
-          </p>
+          <p className="text-white text-lg font-bold">Front-End Developer</p>
         </div>
         <div className="flex p-5 gap-8 md:gap-20 flex-col justify-center items-center text-center h-screen">
           <div className="h-44 sm:h-80 md:hidden"></div>

@@ -11,22 +11,27 @@ const AboutMe = () => {
       {/* Content */}
       <div className="flex flex-row flex-wrap lg:flex-nowrap py-10">
         <div className="flex-grow-0 lg:flex-shrink-0 lg:max-w-lg">
-          <div className="bg-orange-dark rounded-r-sm  p-10 text-white">
+          <div className="bg-orange-dark p-10 text-orange-light">
             <p className="font-bold text-3xl">A blank page is all I need.</p>
             <p className="font-medium text-xl">
               <br />
               This website used to be a blank page. Completely empty, just like
               my bank account. But look at it now, it's so alive! <br />
               <br />
-              Building things that other people use it's really wonderful.
+              Building things that other people use is truly wonderful, and
+              that's what I want to do.
             </p>
-            <p className="font-medium text-xl">
-              <br />
-              Contact me
+            <br />
+            <br />
+            <hr />
+            <br />
+
+            <p className="font-medium text-right text-xl contact-text">
+              Contact me ⇢
             </p>
           </div>
         </div>
-        <div className="p-10 mt-5 lg:mt-0 lg:px-32 lg:py-20">
+        <div className="p-10 mt-5 lg:mt-10 lg:px-24 xl:px-44 lg:py-20">
           <p className="text-left text-red-dark font-bold text-xl">About me</p>
           <p className="text-white text-4xl xl:text-5xl font-extrabold my-5">
             Copywriter by day, Developer by night.
@@ -44,7 +49,7 @@ const AboutMe = () => {
                 href="https://www.linkedin.com/in/george-bucurescu/"
                 target="_blank"
                 rel="noreferrer"
-                className="underline"
+                className="underline font-bold"
               >
                 LinkedIn
               </a>{" "}
