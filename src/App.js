@@ -6,6 +6,7 @@ import {
   Skills,
   Contact,
   Footer,
+  Projects,
 } from "./components";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <HomePage />
       <AboutMe />
+      <Projects />
       <Skills />
       <Contact />
       <Footer />

@@ -7,10 +7,10 @@ const HomePage = () => {
     <>
       {/* Main container */}
       <div
-        className="bg-orange bg-top md:bg-center bg-no-repeat bg-local "
+        className="bg-orange bg-top md:bg-center bg-no-repeat bg-local"
         style={{ backgroundImage: `url(${horns})` }}
       >
-        <div className="rounded-full hidden border-2 border-red text-center h-32 w-32 circle-text xl:flex flex-col justify-center items-center">
+        <div className="rounded-full hidden border-2 border-red-dark text-center h-32 w-32 circle-text xl:flex flex-col justify-center items-center">
           <p className="text-orange-light text-lg font-bold">
             Front-End Developer
           </p>
@@ -20,15 +20,9 @@ const HomePage = () => {
           <p className="text-6xl lg:text-7xl main-title text-white md:max-w-xl lg:max-w-3xl ">
             Taking the bull by the horns is not my job.
           </p>
-          <p className="md:max-w-xs lg:max-w-sm text-2xl font-bold main-subtitle text-orange-light">
+          <p className="md:max-w-xs lg:max-w-sm text-2xl font-bold main-subtitle text-red-dark">
             But I want it to be. So let's talk business, I'm all for it.
           </p>
-
-          {/* <div className="flex flex-col text-white text-lg border-2 border-white rounded-full md:hidden text-center justify-center items-center h-12 w-12">
-          <a href="#" alt="arrow down">
-            <FaChevronDown />
-          </a>
-        </div> */}
         </div>
       </div>
     </>

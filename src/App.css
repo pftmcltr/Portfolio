@@ -40,3 +40,8 @@
     white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
     white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px;
 }
+
+.project-container:hover .details-cta {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
