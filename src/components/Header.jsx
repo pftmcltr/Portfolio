@@ -6,7 +6,7 @@ import { IconContext } from "react-icons/";
 
 const Header = () => {
   return (
-    <div className="pt-16 px-10 bg-orange">
+    <div className="p-10 pb-0 -mt-16 z-10 bg-transparent w-full fixed">
       <div className="flex justify-between">
         <div className="home-button-container">
           <BullHead className="bull-head" />

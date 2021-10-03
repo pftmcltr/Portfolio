@@ -10,7 +10,7 @@ import {
 
 function App() {
   return (
-    <div>
+    <div className="bg-orange">
       <Header />
       <HomePage />
       <AboutMe />

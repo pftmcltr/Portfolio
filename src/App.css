@@ -1,12 +1,14 @@
 .bull-head {
   height: 3rem;
   width: 3rem;
+  z-index: -2;
 }
 
 .bull-stream {
+  z-index: -1;
   position: absolute;
   opacity: 0;
-  top: 6rem;
+  top: 4.5rem;
   left: 2.75rem;
   height: 2.5rem;
   width: 2.5rem;
@@ -24,11 +26,11 @@
   font-family: "Raleway", sans-serif;
 }
 
-.circle-text {
+.front-end-badge {
   position: absolute;
-  top: 10rem;
+  top: 3rem;
   left: auto;
-  right: 10rem;
+  right: 11rem;
 }
 
 .outlined {
@@ -53,4 +55,11 @@
 .contact-text:hover {
   color: #7e2026;
   transition-delay: 0.1s;
+}
+
+.bull-skills {
+  z-index: 1;
+}
+.skills-bg {
+  z-index: 0;
 }

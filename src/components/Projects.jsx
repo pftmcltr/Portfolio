@@ -6,16 +6,18 @@ import aimdb from "../images/aimdb.jpg";
 const Projects = () => {
   return (
     <div className="bg-orange">
-      <div className="px-5 pb-5 text-6xl md:text-7xl text-center md:text-left text-orange max-w-6xl mx-auto font-black section-title">
-        <p className="outlined">Take a look at</p>
-        <p className="text-white leading-tight">some of my projects</p>
+      <div className="px-5 mt-5 text-6xl md:text-7xl text-center md:text-left text-orange max-w-6xl mx-auto font-black section-title">
+        <p className="outlined leading-tight">Take a look at some of</p>
+        <p className="text-white leading-tight">my projects</p>
       </div>
+
+      {/* HOPIN */}
       <div className="flex justify-center flex-wrap gap-12 py-10 px-10">
         <div className="flex flex-wrap justify-center gap-12">
-          <div className="border border-orange-dark bg-orange hover:bg-opacity-20 hover:bg-orange-dark duration-300 max-w-3xl xl:max-w-xl project-container">
+          <div className="border border-orange-dark bg-orange hover:shadow-md duration-300 max-w-3xl xl:max-w-xl project-container">
             <img src={hopin} alt="hopin" />
             <div className="py-10 md:px-20 px-5">
-              <p className="text-orange-light font-bold">
+              <p className="text-red-dark font-bold">
                 01 &nbsp;&nbsp;━&nbsp;&nbsp; Mobile App
               </p>
               <p className="text-white text-4xl font-extrabold my-10">Hop.In</p>
@@ -43,10 +45,12 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="border border-orange-dark bg-orange hover:bg-opacity-20 hover:bg-orange-dark duration-300 max-w-3xl xl:max-w-xl project-container">
+
+          {/* CRYPTOMONEY */}
+          <div className="border border-orange-dark bg-orange  hover:shadow-md  duration-300 max-w-3xl xl:max-w-xl project-container">
             <img src={crypto} alt="cryptomoney cover" />
             <div className="py-10 md:px-20 px-5">
-              <p className="text-orange-light font-bold">
+              <p className="text-red-dark font-bold">
                 02 &nbsp;&nbsp;━&nbsp;&nbsp; Website
               </p>
               <p className="text-white text-4xl font-extrabold my-10">
@@ -76,14 +80,16 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="relative border border-orange-dark bg-orange  hover:bg-opacity-20 hover:bg-orange-dark duration-300 project-container max-w-3xl xl:max-w-3xl">
+
+        {/* AIMBD */}
+        <div className="relative border border-orange-dark bg-orange   hover:shadow-md  duration-300 project-container max-w-3xl xl:max-w-3xl">
           <img src={aimdb} alt="aimdb" />
           <div className="absolute hidden lg:flex justify-center items-center text-center text-xl xl:text-md font-bold text-white top-12 lg:-left-16 bg-red rounded-full h-32 w-32 shadow-lg">
             Latest project
           </div>
           <div className="py-10 md:px-20 px-5">
-            <p className="text-orange-light font-bold">
-              02 &nbsp;&nbsp;━&nbsp;&nbsp; Website
+            <p className="text-red-dark font-bold">
+              03 &nbsp;&nbsp;━&nbsp;&nbsp; Website
             </p>
             <p className="text-white text-4xl font-extrabold my-10">A.I.MDb</p>
             <p className="text-orange-light text-xl font-medium">
