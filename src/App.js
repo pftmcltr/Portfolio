@@ -8,18 +8,21 @@ import {
   Contact,
   Projects,
 } from "./components";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-orange">
-      <Header />
-      <HomePage />
-      <AboutMe />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="bg-orange">
+        <Header />
+        <HomePage />
+        <AboutMe />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

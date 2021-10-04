@@ -4,6 +4,7 @@ import horns from "../images/horns-bg.svg";
 const HomePage = () => {
   return (
     <div
+      id="top"
       className="relative my-24 lg:my-16 bg-top md:bg-center bg-no-repeat bg-local"
       style={{ backgroundImage: `url(${horns})` }}
     >

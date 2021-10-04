@@ -40,7 +40,7 @@ const Projects = () => {
               </div>
             </Carousel>
             <div className="px-10 py-5">
-              <p className="text-red-dark font-bold">
+              <p className="text-red-dark font-bold text-lg">
                 01 &nbsp;&nbsp;━&nbsp;&nbsp; Mobile App
               </p>
               <p className="text-white text-4xl font-extrabold my-10">Hop.In</p>
@@ -52,18 +52,36 @@ const Projects = () => {
               <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5 pt-5 border-t-2 border-orange-dark">
                 <div className="w-1/3 ">
                   {" "}
-                  <p className="mb-3 text-white font-bold text-lg">Link</p>
-                  <p className="text-orange-light font-medium">Netflify</p>
+                  <p className="mb-3 text-orange-light font-medium text-lg">
+                    Link
+                  </p>
+                  <a
+                    href="https://expo.dev/@georrgecb/hop-in"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <p className="text-white text-lg font-semibold">Expo Go</p>
+                  </a>
                 </div>
                 <div className="w-1/3 border-r-2 border-l-2 border-orange-dark ">
                   {" "}
-                  <p className="mb-3 text-white font-bold text-lg">Code</p>
-                  <p className="text-orange-light font-medium">GitHub</p>
+                  <p className="mb-3 text-orange-light font-medium text-lg">
+                    Code
+                  </p>{" "}
+                  <a
+                    href="https://github.com/georrgecb/hop.in"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <p className="text-white text-lg font-semibold">GitHub</p>{" "}
+                  </a>
                 </div>
                 <div className="w-1/3">
                   {" "}
-                  <p className="mb-3 text-white font-bold text-lg">Year</p>
-                  <p className="text-orange-light font-medium">2021</p>
+                  <p className="mb-3 text-orange-light font-medium text-lg">
+                    Year
+                  </p>
+                  <p className="text-white text-lg font-semibold">2021</p>
                 </div>
               </div>
             </div>
@@ -92,7 +110,7 @@ const Projects = () => {
               </div>
             </Carousel>
             <div className="px-10 py-5">
-              <p className="text-red-dark font-bold">
+              <p className="text-red-dark font-bold text-lg">
                 02 &nbsp;&nbsp;━&nbsp;&nbsp; Website
               </p>
               <p className="text-white text-4xl font-extrabold my-10">
@@ -105,18 +123,36 @@ const Projects = () => {
               <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5 pt-5 border-t-2 border-orange-dark">
                 <div className="w-1/3 ">
                   {" "}
-                  <p className="mb-3 text-white font-bold text-lg">Link</p>
-                  <p className="text-orange-light font-medium">Netflify</p>
+                  <p className="mb-3 text-orange-light font-medium text-lg">
+                    Link
+                  </p>
+                  <a
+                    href="https://cryptomoney-ftw.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <p className="text-white text-lg font-semibold">Netflify</p>
+                  </a>
                 </div>
                 <div className="w-1/3 border-r-2 border-l-2 border-orange-dark ">
                   {" "}
-                  <p className="mb-3 text-white font-bold text-lg">Code</p>
-                  <p className="text-orange-light font-medium">GitHub</p>
+                  <p className="mb-3 text-orange-light font-medium text-lg">
+                    Code
+                  </p>
+                  <a
+                    href="https://github.com/georrgecb/CryptoMoney"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <p className="text-white text-lg font-semibold">GitHub</p>{" "}
+                  </a>
                 </div>
                 <div className="w-1/3">
                   {" "}
-                  <p className="mb-3 text-white font-bold text-lg">Year</p>
-                  <p className="text-orange-light font-medium">2021</p>
+                  <p className="mb-3 text-orange-light font-medium text-lg">
+                    Year
+                  </p>
+                  <p className="text-white text-lg font-semibold">2021</p>
                 </div>
               </div>
             </div>
@@ -149,7 +185,7 @@ const Projects = () => {
             Latest project
           </div>
           <div className="px-10 py-5">
-            <p className="text-red-dark font-bold">
+            <p className="text-red-dark font-bold text-lg">
               03 &nbsp;&nbsp;━&nbsp;&nbsp; Website
             </p>
             <p className="text-white text-4xl font-extrabold my-10">A.I.MDb</p>
@@ -160,18 +196,39 @@ const Projects = () => {
             <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5 pt-5 border-t-2 border-orange-dark">
               <div className="w-1/3 ">
                 {" "}
-                <p className="mb-3 text-white font-bold text-lg">Link</p>
-                <p className="text-orange-light font-medium">Netflify</p>
+                <p className="mb-3 text-orange-light font-medium text-lg">
+                  Link
+                </p>
+                <a
+                  href="https://aimdb.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <p className="text-white text-lg font-semibold">Netflify</p>
+                </a>
               </div>
               <div className="w-1/3 border-r-2 border-l-2 border-orange-dark ">
                 {" "}
-                <p className="mb-3 text-white font-bold text-lg">Code</p>
-                <p className="text-orange-light font-medium">GitHub</p>
+                <p className="mb-3 text-orange-light font-medium text-lg">
+                  Code
+                </p>
+                <a
+                  href="https://github.com/georrgecb/AIMDb"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <p className="text-white text-lg font-semibold">
+                    GitHub
+                  </p>{" "}
+                </a>
               </div>
               <div className="w-1/3">
                 {" "}
-                <p className="mb-3 text-white font-bold text-lg">Year</p>
-                <p className="text-orange-light font-medium">2021</p>
+                <p className="mb-3 text-orange-light font-medium text-lg">
+                  Year
+                </p>
+                <p className="text-white text-lg font-semibold">2021</p>
               </div>
             </div>
           </div>

@@ -9,11 +9,7 @@ const Skills = () => {
         <p className="text-white leading-tight">my skills</p>
       </div>
       <div className="relative flex flex-wrap justify-end">
-        <img
-          src={bull}
-          className="xs:max-w-4xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl bull-skills"
-          alt="bull"
-        />
+        <img src={bull} className="xl:max-w-6xl bull-skills" alt="bull" />
         <div className="absolute skills-bg hidden md:flex top-0 left-14 items-center justify-center ">
           <p className="p-5 text-left text-7xl lg:text-8xl font-black skills-gradient">
             REACT
