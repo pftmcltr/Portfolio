@@ -34,13 +34,13 @@
 }
 
 .outlined {
-  text-shadow: white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
-    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
-    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
-    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
-    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
-    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px,
-    white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px, white 0px 0px 1px;
+  text-shadow: white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px,
+    white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px,
+    white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px,
+    white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px,
+    white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px,
+    white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px,
+    white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px, white 0px 0px 2px;
 }
 
 .project-container .details-cta {

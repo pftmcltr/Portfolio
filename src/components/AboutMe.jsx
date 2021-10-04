@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="bg-orange -mt-10">
+    <div className="bg-orange md:-mt-28">
       {/* Title */}
       <div className="px-5 mb-5 text-5xl sm:text-6xl md:text-7xl text-center md:text-left text-orange max-w-6xl mx-auto font-black section-title">
         <p className="outlined leading-tight">I'm George and I like</p>
