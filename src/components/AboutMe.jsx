@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="bg-orange mt-5 lg:mt-0">
+    <div className="bg-orange -mt-10">
       {/* Title */}
-      <div className="px-5 pb-5 text-6xl md:text-7xl text-center md:text-left text-orange max-w-6xl mx-auto font-black section-title">
+      <div className="px-5 mb-5 text-5xl sm:text-6xl md:text-7xl text-center md:text-left text-orange max-w-6xl mx-auto font-black section-title">
         <p className="outlined leading-tight">I'm George and I like</p>
         <p className="text-white leading-tight">building things</p>
       </div>

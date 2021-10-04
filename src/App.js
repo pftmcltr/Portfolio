@@ -4,6 +4,7 @@ import {
   Header,
   HomePage,
   Skills,
+  Footer,
   Contact,
   Projects,
 } from "./components";
@@ -17,6 +18,7 @@ function App() {
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   );
 }

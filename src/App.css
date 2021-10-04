@@ -12,7 +12,7 @@
   left: 2.75rem;
   height: 2.5rem;
   width: 2.5rem;
-  transition: 0.3s ease;
+  transition-duration: 0.3s;
 }
 
 .home-button-container:hover .bull-stream {
@@ -49,12 +49,12 @@
 
 .project-container:hover .details-cta {
   opacity: 1;
-  transition-delay: 1s ease;
+  transition-duration: 0.3s;
 }
 
 .contact-text:hover {
+  transition-duration: 0.3s;
   color: #7e2026;
-  transition-delay: 0.1s;
 }
 
 .bull-skills {
@@ -62,4 +62,15 @@
 }
 .skills-bg {
   z-index: 0;
+}
+
+.skills-gradient {
+  background: -webkit-linear-gradient(#da7437, #f28b37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-box:hover {
+  background: #1f2d3d;
+  transition-duration: 0.3s;
 }
