@@ -39,20 +39,24 @@ const Projects = () => {
                 <img src={hopinSim} alt="hopin" />
               </div>
             </Carousel>
-            <div className="px-10 py-5">
+            <div className="p-10 pt-5">
               <p className="text-red-dark font-bold text-lg">
-                01 &nbsp;&nbsp;━&nbsp;&nbsp; Mobile App
+                01 &nbsp;&nbsp;━&nbsp;&nbsp; Hop.In
               </p>
-              <p className="text-white text-4xl font-extrabold my-10">Hop.In</p>
-              <p className="text-orange-light text-xl font-medium">
-                Ridesharing & Food delivery Android app created with React
-                Native and Expo.
+              <p className="text-white text-2xl font-bold my-5">
+                Ridesharing & Food Delivery App created with React Native and
+                Expo
               </p>
-              <br />
-              <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5 pt-5 border-t-2 border-orange-dark">
+              <p className="text-orange-light text-lg font-medium">
+                While working on this project, I prefered to learn some things
+                the hard way, therefore I used a combination of free APIs for
+                geolocation, routes and directions, plus the Yelp API for
+                restaurant data based on coordinates.
+              </p>
+              <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
                 <div className="w-1/3 ">
                   {" "}
-                  <p className="mb-3 text-orange-light font-medium text-lg">
+                  <p className="mb-2 text-orange-light font-medium text-lg">
                     Link
                   </p>
                   <a
@@ -63,9 +67,9 @@ const Projects = () => {
                     <p className="text-white text-lg font-semibold">Expo Go</p>
                   </a>
                 </div>
-                <div className="w-1/3 border-r-2 border-l-2 border-orange-dark ">
+                <div className="w-1/3 border-r-2 border-l-2 border-orange-dark">
                   {" "}
-                  <p className="mb-3 text-orange-light font-medium text-lg">
+                  <p className="mb-2 text-orange-light font-medium text-lg">
                     Code
                   </p>{" "}
                   <a
@@ -78,7 +82,7 @@ const Projects = () => {
                 </div>
                 <div className="w-1/3">
                   {" "}
-                  <p className="mb-3 text-orange-light font-medium text-lg">
+                  <p className="mb-2 text-orange-light font-medium text-lg">
                     Year
                   </p>
                   <p className="text-white text-lg font-semibold">2021</p>
@@ -109,21 +113,23 @@ const Projects = () => {
                 <img src={cryptoSimWeb} alt="cryptomoney" />
               </div>
             </Carousel>
-            <div className="px-10 py-5">
+            <div className="p-10 pt-5">
               <p className="text-red-dark font-bold text-lg">
-                02 &nbsp;&nbsp;━&nbsp;&nbsp; Website
+                02 &nbsp;&nbsp;━&nbsp;&nbsp; CryptoMoney
               </p>
-              <p className="text-white text-4xl font-extrabold my-10">
-                CryptoMoney
+              <p className="text-white text-2xl font-bold my-5">
+                Fully functional cryptocurrency news website
               </p>
-              <p className="text-orange-light text-xl font-medium">
-                A website for cryptocurrency news and stats.
+              <p className="text-orange-light text-lg font-medium">
+                I used to fetch data with Axios, but thanks to this website, now
+                I know how to use Redux Toolkit's createApi feature, which is
+                very useful for complex projects. I also learned a lot about
+                number and date formats.
               </p>
-              <br />
-              <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5 pt-5 border-t-2 border-orange-dark">
+              <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
                 <div className="w-1/3 ">
                   {" "}
-                  <p className="mb-3 text-orange-light font-medium text-lg">
+                  <p className="mb-2 text-orange-light font-medium text-lg">
                     Link
                   </p>
                   <a
@@ -134,9 +140,9 @@ const Projects = () => {
                     <p className="text-white text-lg font-semibold">Netflify</p>
                   </a>
                 </div>
-                <div className="w-1/3 border-r-2 border-l-2 border-orange-dark ">
+                <div className="w-1/3 border-r-2 border-l-2 border-orange-dark">
                   {" "}
-                  <p className="mb-3 text-orange-light font-medium text-lg">
+                  <p className="mb-2 text-orange-light font-medium text-lg">
                     Code
                   </p>
                   <a
@@ -149,7 +155,7 @@ const Projects = () => {
                 </div>
                 <div className="w-1/3">
                   {" "}
-                  <p className="mb-3 text-orange-light font-medium text-lg">
+                  <p className="mb-2 text-orange-light font-medium text-lg">
                     Year
                   </p>
                   <p className="text-white text-lg font-semibold">2021</p>
@@ -184,19 +190,24 @@ const Projects = () => {
           <div className="absolute hidden lg:flex justify-center items-center text-center text-xl xl:text-md font-bold text-white top-12 lg:-left-16 bg-red rounded-full h-32 w-32 shadow-lg">
             Latest project
           </div>
-          <div className="px-10 py-5">
+          <div className="p-10 pt-5">
             <p className="text-red-dark font-bold text-lg">
-              03 &nbsp;&nbsp;━&nbsp;&nbsp; Website
+              03 &nbsp;&nbsp;━&nbsp;&nbsp; A.I.MDb
             </p>
-            <p className="text-white text-4xl font-extrabold my-10">A.I.MDb</p>
-            <p className="text-orange-light text-xl font-medium">
-              Virtual assistant with AI, connected to a movie database API.
+            <p className="text-white text-2xl font-bold my-5">
+              Johnny, the AI virtual assistant connected to a movie database
             </p>
-            <br />
-            <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5 pt-5 border-t-2 border-orange-dark">
+            <p className="text-orange-light text-lg font-medium">
+              It's like IMDb on steroids. Just by using voice commands, you can
+              get a list of 12 most popular or recently released movies. In
+              addition, Johnny can make conversation, read the titles, go to a
+              different pages or sections and show info about any movie.
+            </p>
+
+            <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
               <div className="w-1/3 ">
                 {" "}
-                <p className="mb-3 text-orange-light font-medium text-lg">
+                <p className="mb-2 text-orange-light font-medium text-lg">
                   Link
                 </p>
                 <a
@@ -209,7 +220,7 @@ const Projects = () => {
               </div>
               <div className="w-1/3 border-r-2 border-l-2 border-orange-dark ">
                 {" "}
-                <p className="mb-3 text-orange-light font-medium text-lg">
+                <p className="mb-2 text-orange-light font-medium text-lg">
                   Code
                 </p>
                 <a
@@ -225,7 +236,7 @@ const Projects = () => {
               </div>
               <div className="w-1/3">
                 {" "}
-                <p className="mb-3 text-orange-light font-medium text-lg">
+                <p className="mb-2 text-orange-light font-medium text-lg">
                   Year
                 </p>
                 <p className="text-white text-lg font-semibold">2021</p>
