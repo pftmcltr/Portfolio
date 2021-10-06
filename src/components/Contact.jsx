@@ -34,7 +34,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <p className="text-orange-light bg-orange text-center font-medium text-xl lg:text-2xl">
+              <p className="text-orange-light bg-orange text-center font-medium text-lg md:text-xl lg:text-2xl">
                 bucurescu.george@gmail.com
               </p>
               <CopyToClipboard text={valueInput} onCopy={() => setCopied(true)}>

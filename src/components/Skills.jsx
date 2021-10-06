@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <div className="bg-orange">
       <div className="bg-orange px-5 mb-5 mt-16 text-5xl sm:text-6xl md:text-7xl text-center md:text-right text-orange max-w-6xl mx-auto font-black section-title">
-        <p className="outlined leading-tight">Here are some of</p>
+        <p className="outlined leading-tight">And some of</p>
         <p className="text-white leading-tight">my skills</p>
       </div>
       <div className="relative flex flex-wrap justify-end">

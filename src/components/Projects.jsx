@@ -118,13 +118,12 @@ const Projects = () => {
                 02 &nbsp;&nbsp;━&nbsp;&nbsp; CryptoMoney
               </p>
               <p className="text-white text-2xl font-bold my-5">
-                Fully functional cryptocurrency news website
+                Fully functional Cryptocurrency News Website
               </p>
               <p className="text-orange-light text-lg font-medium">
-                I used to fetch data with Axios, but thanks to this website, now
-                I know how to use Redux Toolkit's createApi feature, which is
-                very useful for complex projects. I also learned a lot about
-                number and date formats.
+                I got the chance to experiment with Redux Toolkit's createApi
+                feature, which is very useful for complex projects. Furthermore,
+                I learned a lot about number and date formats.
               </p>
               <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
                 <div className="w-1/3 ">
@@ -195,13 +194,14 @@ const Projects = () => {
               03 &nbsp;&nbsp;━&nbsp;&nbsp; A.I.MDb
             </p>
             <p className="text-white text-2xl font-bold my-5">
-              Johnny, the AI virtual assistant connected to a movie database
+              AI Virtual Assistant connected to a Movie Database
             </p>
             <p className="text-orange-light text-lg font-medium">
-              It's like IMDb on steroids. Just by using voice commands, you can
-              get a list of 12 most popular or recently released movies. In
-              addition, Johnny can make conversation, read the titles, go to a
-              different pages or sections and show info about any movie.
+              The virtual assistant powered by Alan AI is programmed to show the
+              most popular movies, new releases and comprehensive details about
+              any movie. Johnny is able not only to return data, but also to
+              read the titles, go to different pages and sections, make small
+              talk and more.
             </p>
 
             <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">

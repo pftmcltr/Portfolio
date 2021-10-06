@@ -16,7 +16,7 @@ const HomePage = () => {
           Let me take the bull by the horns.
         </p>
         <p className="max-w-md md:max-w-xs lg:max-w-sm text-xl font-medium main-subtitle text-orange-light">
-          Because the most challenging projects don't make me quit. They make me
+          Because the most challenging projects don't make me quit, they make me
           not fall asleep until I succeed.
         </p>
       </div>
