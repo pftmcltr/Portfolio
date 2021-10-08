@@ -5,7 +5,7 @@ const Contact = () => {
   const [valueInput] = useState("bucurescu.george@gmail.com");
   const [copied, setCopied] = useState(false);
   return (
-    <div id="bottom" className="bg-orange mb-10 mt-24 md:mt-5 lg:mt-0">
+    <div id="bottom" className="bg-orange mb-10 mt-20 md:mt-5 lg:mt-0">
       {/* Title */}
       <div className="px-5 mb-10 md:mb-14 text-5xl sm:text-6xl md:text-8xl text-center text-orange max-w-6xl mx-auto font-black section-title">
         <p className="outlined">Do you need</p>
