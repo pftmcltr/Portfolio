@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "http://dev.georgebucurescu.ro",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.3.0",
