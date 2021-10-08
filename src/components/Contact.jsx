@@ -20,12 +20,12 @@ const Contact = () => {
               grab it by the horns.
             </i>
           </p>
-          <div className="flex justify-center items-center shadow-lg">
+          <div className="flex justify-center items-center shadow-lg hvr-bounce-to-top">
             <div className="relative gap-4 flex justify-center items-center text-orange-dark border-2 p-5">
               <div
                 className="absolute justify-center items-center px-4 hidden top-0 left-0 w-full h-full"
                 style={{
-                  background: copied && "#1f2d3d",
+                  background: copied && "#19232C",
                   display: copied && "flex",
                 }}
               >
@@ -34,7 +34,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <p className="text-orange-light bg-orange text-center font-medium text-lg md:text-xl lg:text-2xl">
+              <p className="text-orange-light  text-center font-medium text-lg md:text-xl lg:text-2xl">
                 bucurescu.george@gmail.com
               </p>
               <CopyToClipboard text={valueInput} onCopy={() => setCopied(true)}>

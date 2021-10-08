@@ -52,7 +52,7 @@ const AboutMe = () => {
                 href="https://www.linkedin.com/in/george-bucurescu/"
                 target="_blank"
                 rel="noreferrer"
-                className="underline font-bold"
+                className=" font-bold hvr-underline-from-left"
               >
                 LinkedIn
               </a>{" "}

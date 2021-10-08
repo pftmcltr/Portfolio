@@ -18,152 +18,163 @@ const Projects = () => {
         <p className="text-white leading-tight">my projects</p>
       </div>
 
-      <div className="flex justify-center flex-wrap gap-12 p-10">
-        <div className="flex flex-wrap justify-center gap-12">
+      <div className="flex justify-center flex-wrap gap-16 xl:gap-24 p-10">
+        <div className="flex flex-wrap gap-16 justify-center items-center">
           {/* HOPIN */}
-          <div className="border border-orange-dark bg-orange hover:shadow-md duration-300 max-w-3xl xl:max-w-xl project-container">
-            <Carousel
-              dynamicHeight={false}
-              emulateTouch={true}
-              showArrows={true}
-              showThumbs={true}
-              showStatus={true}
-              showIndicators={false}
-              thumbWidth={40}
-              infiniteLoop={true}
-            >
-              <div>
-                <img src={hopin} alt="hopin" />
-              </div>
-              <div>
-                <img src={hopinSim} alt="hopin" />
-              </div>
-            </Carousel>
-            <div className="p-10 pt-5">
-              <p className="text-red-dark font-bold text-lg">
-                01 &nbsp;&nbsp;━&nbsp;&nbsp; Hop.In
-              </p>
-              <p className="text-white text-2xl font-bold my-5">
-                Ridesharing & Food Delivery App created with React Native and
-                Expo
-              </p>
-              <p className="text-orange-light text-lg font-medium">
-                While working on this project, I prefered to learn some things
-                the hard way, therefore I used a combination of free APIs for
-                geolocation, routes and directions, plus the Yelp API for
-                restaurant data based on coordinates.
-              </p>
-              <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
-                <div className="w-1/3 ">
-                  {" "}
-                  <p className="mb-2 text-orange-light font-medium text-lg">
-                    Link
-                  </p>
-                  <a
-                    href="https://expo.dev/@georrgecb/hop-in"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <p className="text-white text-lg font-semibold">Expo Go</p>
-                  </a>
+          <div>
+            <div className="border border-orange-dark bg-orange hover:shadow-md duration-300 max-w-3xl xl:max-w-2xl project-container">
+              <Carousel
+                dynamicHeight={false}
+                emulateTouch={true}
+                showArrows={true}
+                showThumbs={true}
+                showStatus={true}
+                showIndicators={false}
+                thumbWidth={40}
+                infiniteLoop={true}
+              >
+                <div>
+                  <img src={hopin} alt="hopin" />
                 </div>
-                <div className="w-1/3 border-r-2 border-l-2 border-orange-dark">
-                  {" "}
-                  <p className="mb-2 text-orange-light font-medium text-lg">
-                    Code
-                  </p>{" "}
-                  <a
-                    href="https://github.com/georrgecb/hop.in"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <p className="text-white text-lg font-semibold">GitHub</p>{" "}
-                  </a>
+                <div>
+                  <img src={hopinSim} alt="hopin" />
                 </div>
-                <div className="w-1/3">
-                  {" "}
-                  <p className="mb-2 text-orange-light font-medium text-lg">
-                    Year
-                  </p>
-                  <p className="text-white text-lg font-semibold">2021</p>
+              </Carousel>
+              <div className="p-10 pt-5">
+                <p className="text-red-dark font-bold text-lg">
+                  01 &nbsp;&nbsp;━&nbsp;&nbsp; Hop.In
+                </p>
+                <p className="text-white text-2xl font-bold my-5">
+                  Ridesharing & Food Delivery App created with React Native and
+                  Expo
+                </p>
+                <p className="text-orange-light text-lg font-medium">
+                  While working on this project, I prefered to learn some things
+                  the hard way, therefore I used a combination of free APIs for
+                  geolocation, routes and directions, plus the Yelp API for
+                  restaurant data based on coordinates.
+                </p>
+                <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
+                  <div className="w-1/3 ">
+                    {" "}
+                    <p className="mb-2 text-orange-light font-medium text-lg">
+                      Link
+                    </p>
+                    <a
+                      href="https://expo.dev/@georrgecb/hop-in"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <p className="text-white text-lg font-semibold ">
+                        Expo Go
+                      </p>
+                    </a>
+                  </div>
+                  <div className="w-1/3 border-r-2 border-l-2 border-orange-dark">
+                    {" "}
+                    <p className="mb-2 text-orange-light font-medium text-lg">
+                      Code
+                    </p>{" "}
+                    <a
+                      href="https://github.com/georrgecb/hop.in"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <p className="text-white text-lg font-semibold ">
+                        GitHub
+                      </p>{" "}
+                    </a>
+                  </div>
+                  <div className="w-1/3">
+                    {" "}
+                    <p className="mb-2 text-orange-light font-medium text-lg">
+                      Year
+                    </p>
+                    <p className="text-white text-lg font-semibold ">2021</p>
+                  </div>
                 </div>
               </div>
             </div>
+            {/* <div className="h-20" /> */}
           </div>
-
           {/* CRYPTOMONEY */}
-          <div className="border border-orange-dark bg-orange  hover:shadow-md  duration-300 max-w-3xl xl:max-w-xl project-container">
-            <Carousel
-              dynamicHeight={false}
-              emulateTouch={true}
-              showArrows={true}
-              showThumbs={true}
-              showStatus={true}
-              showIndicators={false}
-              thumbWidth={40}
-              infiniteLoop={true}
-            >
-              <div>
-                <img src={crypto} alt="cryptomoney" />
-              </div>
-              <div>
-                <img src={cryptoSimMobile} alt="cryptomoney" />
-              </div>
-              <div>
-                <img src={cryptoSimWeb} alt="cryptomoney" />
-              </div>
-            </Carousel>
-            <div className="p-10 pt-5">
-              <p className="text-red-dark font-bold text-lg">
-                02 &nbsp;&nbsp;━&nbsp;&nbsp; CryptoMoney
-              </p>
-              <p className="text-white text-2xl font-bold my-5">
-                Fully functional Cryptocurrency News Website
-              </p>
-              <p className="text-orange-light text-lg font-medium">
-                I got the chance to experiment with Redux Toolkit's createApi
-                feature, which is very useful for complex projects. Furthermore,
-                I learned a lot about number and date formats.
-              </p>
-              <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
-                <div className="w-1/3 ">
-                  {" "}
-                  <p className="mb-2 text-orange-light font-medium text-lg">
-                    Link
-                  </p>
-                  <a
-                    href="https://cryptomoney-ftw.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <p className="text-white text-lg font-semibold">Netflify</p>
-                  </a>
+          <div className="">
+            <div className=" border border-orange-dark bg-orange  hover:shadow-md duration-300 max-w-3xl xl:max-w-lg project-container">
+              <Carousel
+                dynamicHeight={false}
+                emulateTouch={true}
+                showArrows={true}
+                showThumbs={true}
+                showStatus={true}
+                showIndicators={false}
+                thumbWidth={40}
+                infiniteLoop={true}
+              >
+                <div>
+                  <img src={crypto} alt="cryptomoney" />
                 </div>
-                <div className="w-1/3 border-r-2 border-l-2 border-orange-dark">
-                  {" "}
-                  <p className="mb-2 text-orange-light font-medium text-lg">
-                    Code
-                  </p>
-                  <a
-                    href="https://github.com/georrgecb/CryptoMoney"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <p className="text-white text-lg font-semibold">GitHub</p>{" "}
-                  </a>
+                <div>
+                  <img src={cryptoSimMobile} alt="cryptomoney" />
                 </div>
-                <div className="w-1/3">
-                  {" "}
-                  <p className="mb-2 text-orange-light font-medium text-lg">
-                    Year
-                  </p>
-                  <p className="text-white text-lg font-semibold">2021</p>
+                <div>
+                  <img src={cryptoSimWeb} alt="cryptomoney" />
+                </div>
+              </Carousel>
+              <div className="p-10 pt-5">
+                <p className="text-red-dark font-bold text-lg">
+                  02 &nbsp;&nbsp;━&nbsp;&nbsp; CryptoMoney
+                </p>
+                <p className="text-white text-2xl font-bold my-5">
+                  Fully functional Cryptocurrency News Website
+                </p>
+                <p className="text-orange-light text-lg font-medium">
+                  I got the chance to experiment with number & date formats and
+                  with Redux Toolkit's createApi feature, which is very useful
+                  for complex projects.
+                </p>
+                <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
+                  <div className="w-1/3 ">
+                    {" "}
+                    <p className="mb-2 text-orange-light font-medium text-lg">
+                      Link
+                    </p>
+                    <a
+                      href="https://cryptomoney-ftw.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <p className="text-white text-lg font-semibold ">
+                        Netflify
+                      </p>
+                    </a>
+                  </div>
+                  <div className="w-1/3 border-r-2 border-l-2 border-orange-dark">
+                    {" "}
+                    <p className="mb-2 text-orange-light font-medium text-lg">
+                      Code
+                    </p>
+                    <a
+                      href="https://github.com/georrgecb/CryptoMoney"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <p className="text-white text-lg font-semibold ">
+                        GitHub
+                      </p>{" "}
+                    </a>
+                  </div>
+                  <div className="w-1/3">
+                    {" "}
+                    <p className="mb-2 text-orange-light font-medium text-lg">
+                      Year
+                    </p>
+                    <p className="text-white text-lg font-semibold ">2021</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         {/* AIMBD */}
         <div className="relative border border-orange-dark bg-orange   hover:shadow-md  duration-300 project-container max-w-3xl">
           <Carousel
@@ -186,7 +197,7 @@ const Projects = () => {
               <img src={aimdbSimWeb} alt="aimdb" />
             </div>
           </Carousel>
-          <div className="absolute hidden lg:flex justify-center items-center text-center text-xl xl:text-md font-bold text-white top-12 lg:-left-16 bg-red rounded-full h-32 w-32 shadow-lg">
+          <div className="absolute hidden lg:flex justify-center items-center text-center text-xl xl:text-md font-bold text-white top-12 lg:-left-16 bg-red rounded-full h-32 w-32 shadow-lg hvr-bounce-in">
             Latest project
           </div>
           <div className="p-10 pt-5">
@@ -215,7 +226,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <p className="text-white text-lg font-semibold">Netflify</p>
+                  <p className="text-white text-lg font-semibold ">Netflify</p>
                 </a>
               </div>
               <div className="w-1/3 border-r-2 border-l-2 border-orange-dark ">
@@ -229,7 +240,7 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   {" "}
-                  <p className="text-white text-lg font-semibold">
+                  <p className="text-white text-lg font-semibold ">
                     GitHub
                   </p>{" "}
                 </a>
@@ -239,7 +250,7 @@ const Projects = () => {
                 <p className="mb-2 text-orange-light font-medium text-lg">
                   Year
                 </p>
-                <p className="text-white text-lg font-semibold">2021</p>
+                <p className="text-white text-lg font-semibold ">2021</p>
               </div>
             </div>
           </div>
