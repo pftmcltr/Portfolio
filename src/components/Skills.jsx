@@ -10,8 +10,8 @@ const Skills = () => {
       </div>
       <div className="relative flex flex-wrap justify-end">
         <img src={bull} className="xl:max-w-6xl bull-skills" alt="bull" />
-        <div className="absolute skills-bg hidden md:flex top-0 left-14 items-center justify-center ">
-          <p className="p-5 text-left text-7xl lg:text-8xl font-black skills-gradient">
+        <div className="absolute skills-bg flex top-0 left-14 items-center justify-center ">
+          <p className="p-5 text-left text-4xl sm:6xl md:text-7xl lg:text-8xl font-black skills-gradient">
             REACT
             <br />
             REACT NATIVE
