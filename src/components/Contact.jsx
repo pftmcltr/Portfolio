@@ -5,9 +5,9 @@ const Contact = () => {
   const [valueInput] = useState("bucurescu.george@gmail.com");
   const [copied, setCopied] = useState(false);
   return (
-    <div id="bottom" className="bg-orange mb-10 mt-20 md:mt-5 lg:mt-0">
+    <div id="bottom" className="bg-orange mb-10 mt-20 md:mt-5">
       {/* Title */}
-      <div className="px-5 mb-10 md:mb-14 text-5xl sm:text-6xl md:text-8xl text-center text-orange max-w-6xl mx-auto font-black section-title">
+      <div className="px-5 mb-10 md:mb-14 text-5xl sm:text-6xl md:text-8xl text-center text-orange max-w-6xl mx-auto font-black">
         <p className="outlined">Do you need</p>
         <p className="text-white ">my expertise?</p>
       </div>
@@ -17,7 +17,7 @@ const Contact = () => {
           <p className="px-10 max-w-xl text-xl font-medium text-orange-light text-center">
             <i>
               If there's a raging bull on the loose, just say the word and I'll
-              grab it by the horns.
+              grab it by the horns. You can reach me at the email address below.
             </i>
           </p>
           <div className="flex justify-center items-center shadow-lg hvr-bounce-to-top">

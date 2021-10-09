@@ -45,14 +45,14 @@ const Footer = () => {
           </p>
         </div>
         <div className="hidden lg:flex">
-          <div className="flex border-r-2 p-2 border-red items-center gap-2">
-            <p className="text-lg text-orange font-semibold ">
+          <div className="flex border-r-2 p-2 border-red items-center ">
+            <p className="text-lg text-orange font-semibold hvr-buzz-out">
               Personal Portfolio
             </p>
           </div>
 
-          <div className="flex items-center p-2 gap-2">
-            <p className="text-lg text-orange font-semibold ">
+          <div className="flex items-center p-2 ">
+            <p className="text-lg text-orange font-semibold hvr-buzz-out">
               No Rights Reserved
             </p>
           </div>

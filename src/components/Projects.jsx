@@ -10,10 +10,44 @@ import aimdbSimMobile from "../images/aimdb-sim-mobile.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
+const data = [
+  {
+    index: "01",
+    title: "Ridesharing & Food Delivery App created with React Native and Expo",
+    description:
+      "While working on this project, I prefered to learn some things the hard way, therefore I used a combination of free APIs for geolocation, routes and directions, plus the Yelp API for restaurant data based on coordinates.",
+    link: "https://expo.dev/@georrgecb/hop-in",
+    code: "https://github.com/georrgecb/hop.in",
+    year: 2021,
+  },
+  {
+    index: "02",
+    title: "Fully functional Crypto News Website",
+    description:
+      "I got the chance to experiment with number & date formats and with Redux Toolkit's createApi feature, which is very useful for complex projects.",
+    link: "https://cryptomoney-ftw.netlify.app/",
+    code: "https://github.com/georrgecb/CryptoMoney",
+    year: 2021,
+  },
+  {
+    index: "03",
+    title: "AI Virtual Assistant connected to a Movie Database",
+    description:
+      "The virtual assistant powered by Alan AI is programmed to show the most popular movies, new releases and comprehensive details about any movie. Johnny is able not only to return data, but also to read the titles, go to different pages and sections, make small talk and more.",
+    link: "https://aimdb.netlify.app/",
+    code: "https://github.com/georrgecb/AIMDb",
+    year: 2021,
+  },
+];
+
+const hopinData = data[0];
+const cryptoData = data[1];
+const aimdbData = data[2];
+
 const Projects = () => {
   return (
     <div className="bg-orange">
-      <div className="px-5 mb-5 text-5xl sm:text-6xl md:text-7xl text-center md:text-left text-orange max-w-6xl mx-auto font-black section-title">
+      <div className="px-5 mb-5 text-5xl sm:text-6xl md:text-7xl text-center md:text-left text-orange max-w-6xl mx-auto font-black">
         <p className="outlined leading-tight">Take a look at some of</p>
         <p className="text-white leading-tight">my projects</p>
       </div>
@@ -21,162 +55,158 @@ const Projects = () => {
       <div className="flex justify-center flex-wrap gap-16 xl:gap-24 p-10">
         <div className="flex flex-wrap gap-16 justify-center items-center">
           {/* HOPIN */}
-          <div>
-            <div className="border border-orange-dark bg-orange hover:shadow-md duration-300 max-w-3xl xl:max-w-2xl project-container">
-              <Carousel
-                dynamicHeight={false}
-                emulateTouch={true}
-                showArrows={true}
-                showThumbs={true}
-                showStatus={true}
-                showIndicators={false}
-                thumbWidth={40}
-                infiniteLoop={true}
-              >
-                <div>
-                  <img src={hopin} alt="hopin" />
+
+          <div className="border border-orange-dark bg-orange max-w-3xl xl:max-w-2xl">
+            <Carousel
+              dynamicHeight={false}
+              emulateTouch={true}
+              showArrows={true}
+              showThumbs={true}
+              showStatus={true}
+              showIndicators={false}
+              thumbWidth={40}
+              infiniteLoop={true}
+            >
+              <div>
+                <img src={hopin} alt="hopin" />
+              </div>
+              <div>
+                <img src={hopinSim} alt="hopin" />
+              </div>
+            </Carousel>
+            <div className="p-5">
+              <div className="mb-10 flex justify-start items-center gap-5">
+                <span className="text-white flex justify-center items-center text-3xl font-bold p-2 rounded-full bg-orange-dark">
+                  {hopinData.index}
+                </span>{" "}
+                <p className="text-white text-3xl font-bold">
+                  {hopinData.title}
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-stretch ">
+                <div className="mb-10">
+                  <p className="mb-2 text-orange-light font-medium text-md">
+                    Short Intro
+                  </p>
+                  <p className="text-white text-lg font-semibold">
+                    {hopinData.description}
+                  </p>
                 </div>
-                <div>
-                  <img src={hopinSim} alt="hopin" />
-                </div>
-              </Carousel>
-              <div className="p-10 pt-5">
-                <p className="text-red-dark font-bold text-lg">
-                  01 &nbsp;&nbsp;━&nbsp;&nbsp; Hop.In
-                </p>
-                <p className="text-white text-2xl font-bold my-5">
-                  Ridesharing & Food Delivery App created with React Native and
-                  Expo
-                </p>
-                <p className="text-orange-light text-lg font-medium">
-                  While working on this project, I prefered to learn some things
-                  the hard way, therefore I used a combination of free APIs for
-                  geolocation, routes and directions, plus the Yelp API for
-                  restaurant data based on coordinates.
-                </p>
-                <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
-                  <div className="w-1/3 ">
-                    {" "}
-                    <p className="mb-2 text-orange-light font-medium text-lg">
-                      Link
-                    </p>
-                    <a
-                      href="https://expo.dev/@georrgecb/hop-in"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <p className="text-white text-lg font-semibold ">
+                <div className="flex items-stretch justify-center text-left gap-2">
+                  <div className="border w-full md:w-3/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
+                    <a href={hopinData.link} target="_blank" rel="noreferrer">
+                      <p className="mb-2 text-orange-light font-medium text-md">
+                        Link
+                      </p>
+                      <p className="text-white text-lg font-semibold">
+                        {" "}
                         Expo Go
                       </p>
                     </a>
                   </div>
-                  <div className="w-1/3 border-r-2 border-l-2 border-orange-dark">
-                    {" "}
-                    <p className="mb-2 text-orange-light font-medium text-lg">
-                      Code
-                    </p>{" "}
-                    <a
-                      href="https://github.com/georrgecb/hop.in"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                  <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
+                    <a href={hopinData.code} target="_blank" rel="noreferrer">
+                      <p className="mb-2 text-orange-light font-medium text-md">
+                        Code
+                      </p>
                       <p className="text-white text-lg font-semibold ">
                         GitHub
                       </p>{" "}
                     </a>
                   </div>
-                  <div className="w-1/3">
+                  <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
                     {" "}
-                    <p className="mb-2 text-orange-light font-medium text-lg">
+                    <p className="mb-2 text-orange-light font-medium text-md ">
                       Year
                     </p>
-                    <p className="text-white text-lg font-semibold ">2021</p>
+                    <p className="text-white text-lg font-semibold">
+                      {hopinData.year}
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            {/* <div className="h-20" /> */}
           </div>
+
           {/* CRYPTOMONEY */}
-          <div className="">
-            <div className=" border border-orange-dark bg-orange  hover:shadow-md duration-300 max-w-3xl xl:max-w-lg project-container">
-              <Carousel
-                dynamicHeight={false}
-                emulateTouch={true}
-                showArrows={true}
-                showThumbs={true}
-                showStatus={true}
-                showIndicators={false}
-                thumbWidth={40}
-                infiniteLoop={true}
-              >
-                <div>
-                  <img src={crypto} alt="cryptomoney" />
-                </div>
-                <div>
-                  <img src={cryptoSimMobile} alt="cryptomoney" />
-                </div>
-                <div>
-                  <img src={cryptoSimWeb} alt="cryptomoney" />
-                </div>
-              </Carousel>
-              <div className="p-10 pt-5">
-                <p className="text-red-dark font-bold text-lg">
-                  02 &nbsp;&nbsp;━&nbsp;&nbsp; CryptoMoney
+          <div className="border border-orange-dark bg-orange max-w-3xl xl:max-w-lg">
+            <Carousel
+              dynamicHeight={false}
+              emulateTouch={true}
+              showArrows={true}
+              showThumbs={true}
+              showStatus={true}
+              showIndicators={false}
+              thumbWidth={40}
+              infiniteLoop={true}
+            >
+              <div>
+                <img src={crypto} alt="cryptomoney" />
+              </div>
+              <div>
+                <img src={cryptoSimMobile} alt="cryptomoney" />
+              </div>
+              <div>
+                <img src={cryptoSimWeb} alt="cryptomoney" />
+              </div>
+            </Carousel>
+            <div className="p-5">
+              <div className="mb-10 flex justify-start items-center gap-5">
+                <span className="text-white flex justify-center items-center text-3xl font-bold p-2 rounded-full bg-orange-dark">
+                  {cryptoData.index}
+                </span>{" "}
+                <p className="text-white text-3xl font-bold">
+                  {cryptoData.title}
                 </p>
-                <p className="text-white text-2xl font-bold my-5">
-                  Fully functional Cryptocurrency News Website
-                </p>
-                <p className="text-orange-light text-lg font-medium">
-                  I got the chance to experiment with number & date formats and
-                  with Redux Toolkit's createApi feature, which is very useful
-                  for complex projects.
-                </p>
-                <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
-                  <div className="w-1/3 ">
-                    {" "}
-                    <p className="mb-2 text-orange-light font-medium text-lg">
-                      Link
-                    </p>
-                    <a
-                      href="https://cryptomoney-ftw.netlify.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <p className="text-white text-lg font-semibold ">
+              </div>
+              <div className="flex flex-col justify-center items-stretch ">
+                <div className="mb-10">
+                  <p className="mb-2 text-orange-light font-medium text-md">
+                    Short Intro
+                  </p>
+                  <p className="text-white text-lg font-semibold">
+                    {cryptoData.description}
+                  </p>
+                </div>
+                <div className="flex items-stretch justify-center text-left gap-2">
+                  <div className="border w-full md:w-3/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
+                    <a href={cryptoData.link} target="_blank" rel="noreferrer">
+                      <p className="mb-2 text-orange-light font-medium text-md">
+                        Link
+                      </p>
+                      <p className="text-white text-lg font-semibold">
+                        {" "}
                         Netflify
                       </p>
                     </a>
                   </div>
-                  <div className="w-1/3 border-r-2 border-l-2 border-orange-dark">
-                    {" "}
-                    <p className="mb-2 text-orange-light font-medium text-lg">
-                      Code
-                    </p>
-                    <a
-                      href="https://github.com/georrgecb/CryptoMoney"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                  <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
+                    <a href={cryptoData.code} target="_blank" rel="noreferrer">
+                      <p className="mb-2 text-orange-light font-medium text-md">
+                        Code
+                      </p>
                       <p className="text-white text-lg font-semibold ">
                         GitHub
                       </p>{" "}
                     </a>
                   </div>
-                  <div className="w-1/3">
+                  <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
                     {" "}
-                    <p className="mb-2 text-orange-light font-medium text-lg">
+                    <p className="mb-2 text-orange-light font-medium text-md ">
                       Year
                     </p>
-                    <p className="text-white text-lg font-semibold ">2021</p>
+                    <p className="text-white text-lg font-semibold">
+                      {cryptoData.year}
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         {/* AIMBD */}
-        <div className="relative border border-orange-dark bg-orange   hover:shadow-md  duration-300 project-container max-w-3xl">
+        <div className="relative border border-orange-dark bg-orange max-w-3xl">
           <Carousel
             dynamicHeight={false}
             emulateTouch={true}
@@ -200,57 +230,51 @@ const Projects = () => {
           <div className="absolute hidden lg:flex justify-center items-center text-center text-xl xl:text-md font-bold text-white top-12 lg:-left-16 bg-red rounded-full h-32 w-32 shadow-lg hvr-bounce-in">
             Latest project
           </div>
-          <div className="p-10 pt-5">
-            <p className="text-red-dark font-bold text-lg">
-              03 &nbsp;&nbsp;━&nbsp;&nbsp; A.I.MDb
-            </p>
-            <p className="text-white text-2xl font-bold my-5">
-              AI Virtual Assistant connected to a Movie Database
-            </p>
-            <p className="text-orange-light text-lg font-medium">
-              The virtual assistant powered by Alan AI is programmed to show the
-              most popular movies, new releases and comprehensive details about
-              any movie. Johnny is able not only to return data, but also to
-              read the titles, go to different pages and sections, make small
-              talk and more.
-            </p>
-
-            <div className="flex flex-wrap justify-center items-center text-center details-cta mt-5">
-              <div className="w-1/3 ">
-                {" "}
-                <p className="mb-2 text-orange-light font-medium text-lg">
-                  Link
+          <div className="p-5">
+            <div className="mb-10 flex justify-start items-center gap-5">
+              <span className="text-white flex justify-center items-center text-3xl font-bold p-2 rounded-full bg-orange-dark">
+                {aimdbData.index}
+              </span>{" "}
+              <p className="text-white text-3xl font-bold">{aimdbData.title}</p>
+            </div>
+            <div className="flex flex-col justify-center items-stretch ">
+              <div className="mb-10">
+                <p className="mb-2 text-orange-light font-medium text-md">
+                  Short Intro
                 </p>
-                <a
-                  href="https://aimdb.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <p className="text-white text-lg font-semibold ">Netflify</p>
-                </a>
+                <p className="text-white text-lg font-semibold">
+                  {aimdbData.description}
+                </p>
               </div>
-              <div className="w-1/3 border-r-2 border-l-2 border-orange-dark ">
-                {" "}
-                <p className="mb-2 text-orange-light font-medium text-lg">
-                  Code
-                </p>
-                <a
-                  href="https://github.com/georrgecb/AIMDb"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+              <div className="flex items-stretch justify-center text-left gap-2">
+                <div className="border w-full md:w-3/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
+                  <a href={aimdbData.link} target="_blank" rel="noreferrer">
+                    <p className="mb-2 text-orange-light font-medium text-md">
+                      Link
+                    </p>
+                    <p className="text-white text-lg font-semibold">
+                      {" "}
+                      Netflify
+                    </p>
+                  </a>
+                </div>
+                <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
+                  <a href={aimdbData.code} target="_blank" rel="noreferrer">
+                    <p className="mb-2 text-orange-light font-medium text-md">
+                      Code
+                    </p>
+                    <p className="text-white text-lg font-semibold ">GitHub</p>{" "}
+                  </a>
+                </div>
+                <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
                   {" "}
-                  <p className="text-white text-lg font-semibold ">
-                    GitHub
-                  </p>{" "}
-                </a>
-              </div>
-              <div className="w-1/3">
-                {" "}
-                <p className="mb-2 text-orange-light font-medium text-lg">
-                  Year
-                </p>
-                <p className="text-white text-lg font-semibold ">2021</p>
+                  <p className="mb-2 text-orange-light font-medium text-md ">
+                    Year
+                  </p>
+                  <p className="text-white text-lg font-semibold">
+                    {aimdbData.year}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
