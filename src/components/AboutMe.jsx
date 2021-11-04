@@ -19,8 +19,8 @@ const AboutMe = () => {
               This website used to be a blank page. Empty, like my bank account.
               But look at it now: it's alive! <br />
               <br />
-              From nothing, to something. Building things is quite wonderful,
-              don't you think?
+              As a developer, I get to build something from nothing, and that's
+              quite wonderful, don't you think?
             </p>
             <br />
             <br />
@@ -35,7 +35,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="p-10 mt-5 lg:mt-10 lg:px-24 xl:pl-32 xl:pr-64 lg:py-20">
-          <p className="text-left text-red-dark font-bold text-lg">About me</p>
+          <p className="text-left text-red font-bold text-xl">About me</p>
           <p className="text-white text-4xl font-bold my-5 xl:pr-10 leading-tight">
             Copywriter by day, developer by night.
           </p>

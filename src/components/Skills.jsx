@@ -8,13 +8,13 @@ const Skills = () => {
         <p className="outlined leading-tight">And some of</p>
         <p className="text-white leading-tight">my skills</p>
       </div>
-      <div className="relative flex flex-wrap justify-end">
-        <img src={bull} className="xl:max-w-6xl bull-skills" alt="bull" />
+      <div className="relative flex bg-gradient-to-b from-orange to-orange-dark w-full overflow-hidden flex-wrap justify-end md:mr-20">
+        <img src={bull} className="xl:max-w-4xl  bull-skills" alt="bull" />
         <div className="absolute skills-bg flex top-0 left-14 items-center justify-center ">
-          <p className="p-5 text-left text-4xl sm:6xl md:text-7xl lg:text-8xl font-black skills-gradient ">
+          <p className="p-5 text-left text-4xl sm:6xl md:text-7xl lg:text-8xl font-black text-orange-dark">
             REACT
             <br />
-            REACT NATIVE
+            NEXT.JS
             <br />
             REDUX
             <br />

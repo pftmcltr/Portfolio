@@ -1,48 +1,79 @@
 import React from "react";
-import hopin from "../images/hopin-cover-single.jpg";
-import crypto from "../images/crypto.jpg";
-import hopinSim from "../images/hopin-sim.jpg";
-import cryptoSimMobile from "../images/crypto-sim-mobile.jpg";
-import cryptoSimWeb from "../images/crypto-sim-web.jpg";
-import aimdb from "../images/aimdb.jpg";
-import aimdbSimWeb from "../images/aimdb-sim-web.jpg";
-import aimdbSimMobile from "../images/aimdb-sim-mobile.jpg";
+
+import aimdbOne from "../images/aimdbOne.jpg";
+import aimdbTwo from "../images/aimdbTwo.jpg";
+import aimdbThree from "../images/aimdbThree.jpg";
+import cryptoOne from "../images/cryptoOne.jpg";
+import cryptoTwo from "../images/cryptoTwo.jpg";
+import cryptoThree from "../images/cryptoThree.jpg";
+import rcgOne from "../images/rcgOne.jpg";
+import rcgTwo from "../images/rcgTwo.jpg";
+import rcgThree from "../images/rcgThree.jpg";
+import hopOne from "../images/hopOne.jpg";
+import hopTwo from "../images/hopTwo.jpg";
+import hopThree from "../images/hopThree.jpg";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 const data = [
   {
-    index: "01",
-    title: "Ridesharing & Food Delivery App created with React Native and Expo",
-    description:
-      "While working on this project, I prefered to learn some things the hard way, therefore I used a combination of free APIs for geolocation, routes and directions, plus the Yelp API for restaurant data based on coordinates.",
-    link: "https://expo.dev/@georrgecb/hop-in",
-    code: "https://github.com/georrgecb/hop.in",
-    year: 2021,
-  },
-  {
-    index: "02",
-    title: "Fully functional Crypto News Website",
-    description:
-      "I got the chance to experiment with number & date formats and with Redux Toolkit's createApi feature, which is very useful for complex projects.",
-    link: "https://cryptomoney-ftw.netlify.app/",
-    code: "https://github.com/georrgecb/CryptoMoney",
-    year: 2021,
-  },
-  {
-    index: "03",
+    index: 1,
     title: "AI Virtual Assistant connected to a Movie Database",
     description:
       "The virtual assistant powered by Alan AI is programmed to show the most popular movies, new releases and comprehensive details about any movie. Johnny is able not only to return data, but also to read the titles, go to different pages and sections, make small talk and more.",
     link: "https://aimdb.netlify.app/",
+    linkTo: "Live on Netlify",
     code: "https://github.com/georrgecb/AIMDb",
     year: 2021,
+    imageOne: aimdbOne,
+    imageTwo: aimdbTwo,
+    imageThree: aimdbThree,
+    tech: ["React", "Redux Toolkit", "Alan AI", "Material UI"],
+  },
+  {
+    index: 2,
+    title: "Static Website with a Headless CMS provided by Strapi",
+    description:
+      "Next.js and Strapi work hand in hand when building a website with blog articles. The former makes the website super fast and optimized for search engines, the latter allows users to create and modify the data stored in a MongoDB database.",
+    link: "https://rcgrivita.vercel.app/",
+    linkTo: "Live on Vercel",
+    code: "https://github.com/georrgecb/RCG-Blog",
+    year: 2021,
+    imageOne: rcgOne,
+    imageTwo: rcgTwo,
+    imageThree: rcgThree,
+    tech: ["React", "Next.js", "Tailwind", "Strapi", "MongoDB"],
+  },
+  {
+    index: 3,
+    title: "Ridesharing & Food Delivery App created with React Native",
+    description:
+      "The app uses a combination of free APIs for geolocation and the Yelp API for restaurant data based on the given coordinates. Although it's not fully functional, Hop.in provides with real information about your ride (distance, duration, price) and restaurants (rating, distance from your location, category).",
+    link: "https://expo.dev/@georrgecb/hop-in",
+    linkTo: "Open in Expo Go",
+    code: "https://github.com/georrgecb/hop.in",
+    year: 2021,
+    imageOne: hopOne,
+    imageTwo: hopTwo,
+    imageThree: hopThree,
+    tech: ["React Native", "Redux Toolkit", "Expo", "Tailwind"],
+  },
+  {
+    index: 4,
+    title: "Fully Functional Crypto News Website",
+    description:
+      "With Redux Toolkit's RTK Query already set up, the website is more scalable and, in the future, it can connect easier to new APIs. Right now, CryptoMoney gets real time data from Bing News and Coin Ranking API.",
+    link: "https://cryptomoney-ftw.netlify.app/",
+    linkTo: "Live on Netlify",
+    code: "https://github.com/georrgecb/CryptoMoney",
+    year: 2021,
+    imageOne: cryptoOne,
+    imageTwo: cryptoTwo,
+    imageThree: cryptoThree,
+    tech: ["React", "Redux Toolkit", "Ant Design"],
   },
 ];
-
-const hopinData = data[0];
-const cryptoData = data[1];
-const aimdbData = data[2];
 
 const Projects = () => {
   return (
@@ -52,233 +83,107 @@ const Projects = () => {
         <p className="text-white leading-tight">my projects</p>
       </div>
 
-      <div className="flex justify-center flex-wrap gap-16 xl:gap-24 p-10">
-        <div className="flex flex-wrap gap-16 justify-center items-center">
-          {/* HOPIN */}
-
-          <div className="border border-orange-dark bg-orange max-w-3xl xl:max-w-2xl">
-            <Carousel
-              dynamicHeight={false}
-              emulateTouch={true}
-              showArrows={true}
-              showThumbs={true}
-              showStatus={true}
-              showIndicators={false}
-              thumbWidth={40}
-              infiniteLoop={true}
-            >
-              <div>
-                <img src={hopin} alt="hopin" />
-              </div>
-              <div>
-                <img src={hopinSim} alt="hopin" />
-              </div>
-            </Carousel>
-            <div className="p-5">
-              <div className="mb-10 flex justify-start items-center gap-5">
-                <span className="text-white flex justify-center items-center text-3xl font-bold p-2 rounded-full bg-orange-dark">
-                  {hopinData.index}
-                </span>{" "}
-                <p className="text-white text-3xl font-bold">
-                  {hopinData.title}
-                </p>
-              </div>
-              <div className="flex flex-col justify-center items-stretch ">
-                <div className="mb-10">
-                  <p className="mb-2 text-orange-light font-medium text-md">
-                    Short Intro
-                  </p>
-                  <p className="text-white text-lg font-semibold">
-                    {hopinData.description}
-                  </p>
-                </div>
-                <div className="flex items-stretch justify-center text-left gap-2">
-                  <div className="border w-full md:w-3/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
-                    <a href={hopinData.link} target="_blank" rel="noreferrer">
-                      <p className="mb-2 text-orange-light font-medium text-md">
-                        Link
-                      </p>
-                      <p className="text-white text-lg font-semibold">
-                        {" "}
-                        Expo Go
-                      </p>
-                    </a>
-                  </div>
-                  <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
-                    <a href={hopinData.code} target="_blank" rel="noreferrer">
-                      <p className="mb-2 text-orange-light font-medium text-md">
-                        Code
-                      </p>
-                      <p className="text-white text-lg font-semibold ">
-                        GitHub
-                      </p>{" "}
-                    </a>
-                  </div>
-                  <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
-                    {" "}
-                    <p className="mb-2 text-orange-light font-medium text-md ">
-                      Year
-                    </p>
-                    <p className="text-white text-lg font-semibold">
-                      {hopinData.year}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* CRYPTOMONEY */}
-          <div className="border border-orange-dark bg-orange max-w-3xl xl:max-w-lg">
-            <Carousel
-              dynamicHeight={false}
-              emulateTouch={true}
-              showArrows={true}
-              showThumbs={true}
-              showStatus={true}
-              showIndicators={false}
-              thumbWidth={40}
-              infiniteLoop={true}
-            >
-              <div>
-                <img src={crypto} alt="cryptomoney" />
-              </div>
-              <div>
-                <img src={cryptoSimMobile} alt="cryptomoney" />
-              </div>
-              <div>
-                <img src={cryptoSimWeb} alt="cryptomoney" />
-              </div>
-            </Carousel>
-            <div className="p-5">
-              <div className="mb-10 flex justify-start items-center gap-5">
-                <span className="text-white flex justify-center items-center text-3xl font-bold p-2 rounded-full bg-orange-dark">
-                  {cryptoData.index}
-                </span>{" "}
-                <p className="text-white text-3xl font-bold">
-                  {cryptoData.title}
-                </p>
-              </div>
-              <div className="flex flex-col justify-center items-stretch ">
-                <div className="mb-10">
-                  <p className="mb-2 text-orange-light font-medium text-md">
-                    Short Intro
-                  </p>
-                  <p className="text-white text-lg font-semibold">
-                    {cryptoData.description}
-                  </p>
-                </div>
-                <div className="flex items-stretch justify-center text-left gap-2">
-                  <div className="border w-full md:w-3/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
-                    <a href={cryptoData.link} target="_blank" rel="noreferrer">
-                      <p className="mb-2 text-orange-light font-medium text-md">
-                        Link
-                      </p>
-                      <p className="text-white text-lg font-semibold">
-                        {" "}
-                        Netflify
-                      </p>
-                    </a>
-                  </div>
-                  <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
-                    <a href={cryptoData.code} target="_blank" rel="noreferrer">
-                      <p className="mb-2 text-orange-light font-medium text-md">
-                        Code
-                      </p>
-                      <p className="text-white text-lg font-semibold ">
-                        GitHub
-                      </p>{" "}
-                    </a>
-                  </div>
-                  <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
-                    {" "}
-                    <p className="mb-2 text-orange-light font-medium text-md ">
-                      Year
-                    </p>
-                    <p className="text-white text-lg font-semibold">
-                      {cryptoData.year}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* AIMBD */}
-        <div className="relative border border-orange-dark bg-orange max-w-3xl">
-          <Carousel
-            dynamicHeight={false}
-            emulateTouch={true}
-            showArrows={true}
-            showThumbs={true}
-            showStatus={true}
-            showIndicators={false}
-            thumbWidth={40}
-            infiniteLoop={true}
+      <div className="p-10 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-stretch">
+        {data.map((proj) => (
+          <div
+            key={proj.index}
+            className="relative border border-orange-dark bg-orange flex flex-col justify-start"
           >
-            <div>
-              <img src={aimdb} alt="aimdb" />
-            </div>
-            <div>
-              <img src={aimdbSimMobile} alt="aimdb" />
-            </div>
-            <div>
-              <img src={aimdbSimWeb} alt="aimdb" />
-            </div>
-          </Carousel>
-          <div className="absolute hidden lg:flex justify-center items-center text-center text-xl xl:text-md font-bold text-white top-12 lg:-left-16 bg-red rounded-full h-32 w-32 shadow-lg hvr-bounce-in">
-            Latest project
-          </div>
-          <div className="p-5">
-            <div className="mb-10 flex justify-start items-center gap-5">
-              <span className="text-white flex justify-center items-center text-3xl font-bold p-2 rounded-full bg-orange-dark">
-                {aimdbData.index}
-              </span>{" "}
-              <p className="text-white text-3xl font-bold">{aimdbData.title}</p>
-            </div>
-            <div className="flex flex-col justify-center items-stretch ">
-              <div className="mb-10">
-                <p className="mb-2 text-orange-light font-medium text-md">
-                  Short Intro
-                </p>
-                <p className="text-white text-lg font-semibold">
-                  {aimdbData.description}
-                </p>
+            <Carousel
+              dynamicHeight={false}
+              emulateTouch={true}
+              showArrows={true}
+              showThumbs={true}
+              showStatus={true}
+              showIndicators={false}
+              thumbWidth={50}
+              infiniteLoop={true}
+            >
+              <div>
+                <img src={proj.imageOne} alt="project's cover" />
               </div>
-              <div className="flex items-stretch justify-center text-left gap-2">
-                <div className="border w-full md:w-3/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
-                  <a href={aimdbData.link} target="_blank" rel="noreferrer">
-                    <p className="mb-2 text-orange-light font-medium text-md">
-                      Link
-                    </p>
-                    <p className="text-white text-lg font-semibold">
-                      {" "}
-                      Netflify
-                    </p>
-                  </a>
+              <div>
+                <img src={proj.imageTwo} alt="project's cover" />
+              </div>
+              <div>
+                <img src={proj.imageThree} alt="project's cover" />
+              </div>
+            </Carousel>
+            {/* Badge Latest */}
+            {proj.index === 0 ? (
+              <div className="absolute hidden cursor-default lg:flex justify-center items-center text-center text-xl xl:text-md font-bold text-white top-12 lg:-left-16 bg-red rounded-full h-32 w-32 shadow-lg hvr-bounce-in">
+                Latest project
+              </div>
+            ) : null}
+            <div className="p-5 flex flex-col h-full justify-between items-stretch">
+              <div>
+                <div className="mb-10 flex justify-start items-center gap-5">
+                  <span className="text-white flex justify-center items-center text-3xl font-bold p-2 rounded-full bg-orange-dark">
+                    0{proj.index}
+                  </span>{" "}
+                  <p className="text-white text-2xl lg:text-3xl font-bold">
+                    {proj.title}
+                  </p>
                 </div>
-                <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
-                  <a href={aimdbData.code} target="_blank" rel="noreferrer">
-                    <p className="mb-2 text-orange-light font-medium text-md">
-                      Code
-                    </p>
-                    <p className="text-white text-lg font-semibold ">GitHub</p>{" "}
-                  </a>
-                </div>
-                <div className="border md:w-1/5 border-orange-dark border-dashed p-3 hvr-bounce-to-right">
-                  {" "}
-                  <p className="mb-2 text-orange-light font-medium text-md ">
-                    Year
+
+                <div className="mb-10">
+                  <p className="mb-2 text-orange-light font-medium text-md">
+                    Short Intro
                   </p>
                   <p className="text-white text-lg font-semibold">
-                    {aimdbData.year}
+                    {proj.description}
                   </p>
+                </div>
+              </div>
+              <div>
+                <div className="flex flex-wrap gap-3 pb-10">
+                  {proj.tech.map((t, i) => (
+                    <div
+                      key={i}
+                      className="bg-orange-dark rounded-full px-3 py-1 flex justify-center items-center  hover:border-opacity-100 border-2 border-opacity-0 border-white duration-300 cursor-default"
+                    >
+                      <p className=" text-orange-light text-md text-center font-bold">
+                        {t}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-stretch justify-center text-left gap-2">
+                  <div className="border rounded-lg w-full md:w-3/5 border-orange-dark  p-3 hvr-bounce-to-right">
+                    <a href={proj.link} target="_blank" rel="noreferrer">
+                      <p className="mb-2 text-orange-light font-medium text-md">
+                        Link
+                      </p>
+                      <p className="text-white text-lg font-semibold">
+                        {" "}
+                        {proj.linkTo}
+                      </p>
+                    </a>
+                  </div>
+                  <div className="border rounded-lg md:w-1/5 border-orange-dark  p-3 hvr-bounce-to-right ">
+                    <a href={proj.code} target="_blank" rel="noreferrer">
+                      <p className="mb-2 text-orange-light font-medium text-md">
+                        Code
+                      </p>
+                      <p className="text-white text-lg font-semibold ">
+                        GitHub
+                      </p>{" "}
+                    </a>
+                  </div>
+                  <div className="border rounded-lg md:w-1/5 border-orange-dark  p-3 hvr-bounce-to-right">
+                    {" "}
+                    <p className="mb-2 text-orange-light font-medium text-md ">
+                      Year
+                    </p>
+                    <p className="text-white text-lg font-semibold">
+                      {proj.year}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

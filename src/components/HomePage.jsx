@@ -16,8 +16,8 @@ const HomePage = () => {
           Let me take the bull by the horns.
         </p>
         <p className="max-w-md md:max-w-xs lg:max-w-sm text-xl font-medium main-subtitle text-orange-light">
-          Working on challenging projects never makes me quit. It makes me not
-          fall asleep until I succeed.
+          Now, you might ask yourself if I'm the man for the job. Just keep
+          scrolling down and maybe you'll find the answer.
         </p>
       </div>
     </div>
