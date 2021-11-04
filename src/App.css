@@ -346,3 +346,21 @@
     filter: drop-shadow(-0.75rem 0 0.25rem #a55a2f);
   }
 }
+
+.roll-text {
+  animation-name: roll-animate;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+}
+
+@keyframes roll-animate {
+  0% {
+    top: 0;
+  }
+  90% {
+    top: -48rem;
+  }
+  100% {
+    top: 0;
+  }
+}

@@ -16,8 +16,8 @@ const HomePage = () => {
           Let me take the bull by the horns.
         </p>
         <p className="max-w-md md:max-w-xs lg:max-w-sm text-xl font-medium main-subtitle text-orange-light">
-          Now, you might ask yourself if I'm the man for the job. Just keep
-          scrolling down and maybe you'll find the answer.
+          Now, you might be asking yourself if I'm the man for the job. I really
+          can't say, but keep scrolling and you'll find the answer.
         </p>
       </div>
     </div>

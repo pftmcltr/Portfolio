@@ -110,7 +110,7 @@ const Projects = () => {
               </div>
             </Carousel>
             {/* Badge Latest */}
-            {proj.index === 0 ? (
+            {proj.index === 1 ? (
               <div className="absolute hidden cursor-default lg:flex justify-center items-center text-center text-xl xl:text-md font-bold text-white top-12 lg:-left-16 bg-red rounded-full h-32 w-32 shadow-lg hvr-bounce-in">
                 Latest project
               </div>

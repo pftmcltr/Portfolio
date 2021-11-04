@@ -8,10 +8,10 @@ const Skills = () => {
         <p className="outlined leading-tight">And some of</p>
         <p className="text-white leading-tight">my skills</p>
       </div>
-      <div className="relative flex bg-gradient-to-b from-orange to-orange-dark w-full overflow-hidden flex-wrap justify-end md:mr-20">
-        <img src={bull} className="xl:max-w-4xl  bull-skills" alt="bull" />
-        <div className="absolute skills-bg flex top-0 left-14 items-center justify-center ">
-          <p className="p-5 text-left text-4xl sm:6xl md:text-7xl lg:text-8xl font-black text-orange-dark">
+      <div className="relative mt-10 flex bg-orange w-full overflow-hidden flex-wrap justify-center">
+        <img src={bull} className="xl:max-w-4xl bull-skills" alt="bull" />
+        <div className="absolute left-20 skills-bg flex items-center justify-center overflow-hidden roll-text">
+          <p className="p-5 text-left text-4xl sm:6xl md:text-7xl lg:text-8xl font-black skills-gradient">
             REACT
             <br />
             NEXT.JS
@@ -20,9 +20,27 @@ const Skills = () => {
             <br />
             NODE.JS
             <br />
-            CSS + SCSS
+            SCSS
             <br />
             TAILWIND
+            <br />
+            BOOTSTRAP
+            <br />
+            TYPESCRIPT
+            <br />
+            GIT+GITHUB
+            <br />
+            PYTHON
+            <br />
+            LINUX
+            <br />
+            MONGODB
+            <br />
+            REACT NATIVE
+            <br />
+            POSTMAN
+            <br />
+            STRAPI
           </p>
         </div>
       </div>
