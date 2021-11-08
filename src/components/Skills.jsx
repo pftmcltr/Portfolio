@@ -3,7 +3,7 @@ import bull from "../images/skills.svg";
 
 const Skills = () => {
   return (
-    <div className="bg-orange">
+    <div data-aos="fade" className="bg-orange">
       <div className="bg-orange px-5 mb-5 mt-20 text-5xl sm:text-6xl md:text-7xl text-center md:text-right text-orange max-w-6xl mx-auto font-black">
         <p className="outlined leading-tight">And some of</p>
         <p className="text-white leading-tight">my skills</p>

@@ -5,7 +5,7 @@ const Contact = () => {
   const [valueInput] = useState("bucurescu.george@gmail.com");
   const [copied, setCopied] = useState(false);
   return (
-    <div id="bottom" className="bg-orange pb-10 pt-28">
+    <div data-aos="fade" id="bottom" className="bg-orange pb-10 pt-32">
       {/* Title */}
       <div className="px-5 mb-10 text-5xl sm:text-6xl md:text-7xl text-center md:text-left text-orange max-w-6xl mx-auto font-black">
         <p className="outlined">Do you need</p>
@@ -18,7 +18,7 @@ const Contact = () => {
           alt="bull warning sign"
           className="w-60 bull-warning-animation hidden lg:block z-20"
         />
-        <div className="lg:-ml-32 md:m-10 md:p-20 bg-orange md:border-2 border-orange-dark  flex flex-col justify-center items-center gap-10 md:max-w-2xl ">
+        <div className="lg:-ml-32 md:m-10 md:p-20 bg-gradient-to-r from-orange to-orange-dark flex flex-col justify-center items-center gap-10 md:max-w-2xl ">
           <p className="text-xl px-5 md:px-0 font-medium text-orange-light text-center">
             <i>
               {" "}
@@ -29,7 +29,7 @@ const Contact = () => {
           {/* email box */}
           <div className="">
             <div className="flex justify-center items-center shadow-lg hvr-bounce-to-top">
-              <div className="relative gap-4 flex justify-center items-center text-orange-dark border-b-2 p-5">
+              <div className="relative gap-4 flex justify-center items-center text-orange-dark border-b-2 border-blue-dark p-5">
                 <div
                   className="absolute justify-center items-center px-4 hidden top-0 left-0 w-full h-full"
                   style={{
@@ -55,7 +55,7 @@ const Contact = () => {
                       className="h-6 w-6"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke="currentColor"
+                      stroke="black"
                     >
                       <path
                         strokeLinecap="round"

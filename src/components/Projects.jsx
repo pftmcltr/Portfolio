@@ -77,7 +77,7 @@ const data = [
 
 const Projects = () => {
   return (
-    <div className="bg-orange">
+    <div data-aos="fade" className="bg-orange">
       <div className="px-5 mb-5 text-5xl sm:text-6xl md:text-7xl text-center md:text-left text-orange max-w-6xl mx-auto font-black">
         <p className="outlined leading-tight">Take a look at some of</p>
         <p className="text-white leading-tight">my projects</p>

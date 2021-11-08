@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="bg-orange">
+    <div data-aos="fade" className="bg-orange">
       <img src={rodeo} className="h-48 ml-auto bg-orange" alt="rodeo" />
       <div className="h-52 bg-red-dark px-16 -mt-12 flex justify-center lg:justify-between items-center">
         <div className="flex">

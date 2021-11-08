@@ -3,7 +3,7 @@ import { HashLink } from "react-router-hash-link";
 
 const AboutMe = () => {
   return (
-    <div className="bg-orange md:-mt-28">
+    <div data-aos="fade" className="bg-orange md:-mt-28">
       {/* Title */}
       <div className="px-5 mb-5 text-5xl sm:text-6xl md:text-7xl text-center md:text-left text-orange max-w-6xl mx-auto font-black">
         <p className="outlined leading-tight">Hello! I'm George and </p>
